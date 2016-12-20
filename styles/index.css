@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Cousine|Heebo:800');
+@import './colours/light.css';
+@import './colours/dark.css';
+
+@keyframes marquee {
+  from { background-position: 0 0; }
+  to { background-position: 100% 0; }
+}
+
+header, footer {
+  height: 20px;
+  background-size: 179px 19.5px;
+  background-repeat: repeat-x;
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+  animation: marquee 10s linear infinite;
+}
+
+@media screen and (min-width: 640px) {
+  header, footer {
+    animation: marquee 40s linear infinite;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  header, footer {
+    animation: marquee 30s linear infinite;
+  }
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  font-family: 'Cousine', monospace;
+}
+
+h1, p, a {
+  text-decoration: none;
+}
+
+section {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-family: 'Heebo', sans-serif;
+  font-size: 30vw;
+  line-height: 0.81;
+}
+
+p {
+  letter-spacing: 0.28px;
+  font-size: 3vw;
+
+  -webkit-animation-delay:0.25s;
+  -moz-animation-delay:0.25s;
+  -ms-animation-delay:0.25s;
+  -o-animation-delay:0.25s;
+  animation-delay:0.25s;
+}
+
+body {
+  text-align: center;
+}
+
+footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+}

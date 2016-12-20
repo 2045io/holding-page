@@ -1,0 +1,14 @@
+body.light header,
+body.light footer {
+  background-image: url('../../images/coming-soon-light.png');
+}
+
+body.light h1,
+body.light p,
+body.light a {
+  color: #0f0f0f;
+}
+
+body.light {
+  background-color: #fff;
+}

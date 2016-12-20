@@ -1,0 +1,14 @@
+body.dark header,
+body.dark footer {
+  background-image: url('../../images/coming-soon-dark.png');
+}
+
+body.dark h1,
+body.dark p,
+body.dark a {
+  color: #fff;
+}
+
+body.dark {
+  background-color: #0f0f0f;
+}

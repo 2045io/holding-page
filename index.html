@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>2045</title>
+    <meta name="description" content="2045 are a next generation consultancy who deploy small, highly skilled, autonomous teams to generate ideas, validate and develop them into new brands, products and services. With a cross functional, lean and agile approach to product strategy, design and development we can deliver cutting edge and sustainable solutions faster." />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" type="text/css" />
+    <link rel="stylesheet" href="./styles/reset.css" type="text/css" />
+    <link rel="stylesheet" href="./styles/index.css" type="text/css" />
+  </head>
+  <body id="page" class="dark">
+    <div>
+      <header></header>
+      <section>
+        <h1 class="animated fadeIn">2045</h1>
+        <p class="animated fadeIn">Get in touch: <a id="email" href="mailto:readwrite@2045.io">readwrite@2045.io</a></p>
+      </section>
+      <footer></footer>
+    </div>
+    <script>
+      var preload = new Image();
+      preload.src = './images/coming-soon-light.png';
+
+      document.getElementById("email").onmouseover = function () {
+        document.getElementById("page").className = "light"
+      };
+
+      document.getElementById("email").onmouseout = function () {
+        document.getElementById("page").className = "dark"
+      };
+    </script>
+  </body>
+</html>
